@@ -4,11 +4,45 @@
 @BorderColor: #DC1C96;
 @BtnActionColor: #ebd16a;
 
+@ScrollBGColor: rgba(255, 255, 255, 0.2);
+@ScrollThumbColor: rgba(255, 255, 255, 0.3);
+@ScrollThumbActionColor: rgba(235, 209, 106, 0.8);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+::-webkit-scrollbar-button {
+    width:7px;
+    height:0px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    background-color: @ScrollBGColor;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: @ScrollThumbColor;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover{
+    background-color:@ScrollThumbActionColor;
+    }
+    
+    ::-webkit-resizer{
+    width:7px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar{
+    width: 7px;
+    }
 
 body {
     font-family: 'Poiret One', cursive;
@@ -134,5 +168,73 @@ body {
     }
     .pulse:active{
         border-color: var(--hover);
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+
+    .logo a {
+        font-size: 60px;
+        color: @Textcolor;
+        letter-spacing: 5px;
+        text-decoration: none;
+    }
+    .logo a:hover {
+        color: @BtnActionColor;
+    }
+    nav ul {
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around
+    }
+    nav ul li {
+        list-style-type: none;
+    }
+
+    nav ul li a {
+        display: block;
+        color: @Textcolor;
+        text-decoration: none;
+        font-size: 30px;
+        line-height: 2;
+        letter-spacing: 2px;
+        text-align: center;
+        cursor: pointer;
+       
+    }
+    nav ul li a.active-item {
+        border-bottom: solid @BorderColor 1px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:active {
+        color: @BtnActionColor;
+        border-bottom: solid @BtnActionColor 1px;
+    }
+}
+
+.internal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .container {
+        width: 70vw;
+        height: 70vh;
+        padding: 5vh 3vw;
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        overflow: overlay;
+        p {
+            margin-bottom: 10px;
+        }
     }
 }
