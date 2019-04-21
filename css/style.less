@@ -1,1 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
+@Textcolor: #FFFFFF;
+@BorderColor: #DC1C96;
+@BtnActionColor: #ebd16a;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poiret One', cursive;
+    background: url(../img/bg.jpg) fixed no-repeat;
+    background-size: cover;
+    color: @Textcolor;
+
+}
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    picture img {
+        display: block;
+    }
+
+    h1,
+    p {
+        width: max-content;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 1.33;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 30px;
+        line-height: 2;
+        letter-spacing: 2px;
+        margin-bottom: 80px;
+    }
+
+    nav ul {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around
+    }
+
+    nav ul li {
+        list-style-type: none;
+    }
+
+    nav ul li a {
+        width: 250px;
+        height: 70px;
+        display: block;
+        color: @Textcolor;
+        text-decoration: none;
+        font-size: 30px;
+        line-height: 2;
+        letter-spacing: 2px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .draw-border {
+        box-shadow: inset 0 0 0 2px @BorderColor;
+        transition: color 0.25s 0.0833333333s;
+        position: relative;
+    }
+
+    .draw-border::before,
+    .draw-border::after {
+        border: 0 solid transparent;
+        box-sizing: border-box;
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .draw-border::before {
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+    }
+
+    .draw-border::after {
+        border-top-width: 2px;
+        border-right-width: 2px;
+    }
+
+    .draw-border:hover::before,
+    .draw-border:hover::after {
+        border-color: @BtnActionColor;
+        transition: border-color 0s, width 0.25s, height 0.25s;
+        width: 100%;
+        height: 100%;
+    }
+
+    .draw-border:hover::before {
+        transition-delay: 0s, 0s, 0.25s;
+    }
+
+    .draw-border:hover::after {
+        transition-delay: 0s, 0.25s, 0s;
+    }
+
+    .pulse:active{
+        animation: pulse 1s;
+        box-shadow: 0 0 20px 1em rgba(255, 255, 255, 0);
+    }
+
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 var(--hover);
+        }
+    }
+
+    .pulse {
+        --hover: @BtnActionColor;
+    }
+    .pulse:active{
+        border-color: var(--hover);
+    }
+}
