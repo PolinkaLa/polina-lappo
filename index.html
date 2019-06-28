@@ -12,10 +12,10 @@
     <header>
         <div class="avatar"></div>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Works</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul id="navUl">
+                <li><a href="#about" class="active-link" id="aboutLink">About</a></li>
+                <li><a href="#work" id="workLink">Works</a></li>
+                <li><a href="#contact" id="contactLink">Contact</a></li>
             </ul>
         </nav>
         <div class="footer-link">
@@ -27,25 +27,39 @@
         </div>
     </header>
     <main>
-        <section class="about" id="about">
+        <section class="about activeSection" id="about">
             <article>
-                <h1></h1>
+                <h1>About</h1>
+                <div class="container">
+                    <p class="logo"><b>polina</b> lappo<span>.</span></p>
+                    <p class="vacancy">JavaScript Developer</p>
+                    <p class="info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum laboriosam eos atque error illum obcaecati laudantium totam ratione commodi.
+                    </p>
+                    <div>
+                        <button>Hire me</button>
+                        <button>Get CV</button>
+                    </div>
+                    <div>
+                        <p>Release yourself - It's a big Sky</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="work dont-show" id="work">
+            <article>
+                <h1>Works</h1>
                 <div></div>
             </article>
         </section>
-        <section class="work" id="work">
+        <section class="contact dont-show" id="contact" >
             <article>
-                <h1></h1>
-                <div></div>
-            </article>
-        </section>
-        <section class="contact" id="contact">
-            <article>
-                <h1></h1>
+                <h1>Contacts</h1>
                 <div></div>
             </article>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
