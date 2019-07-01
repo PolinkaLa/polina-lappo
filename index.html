@@ -13,9 +13,9 @@
         <div class="avatar"></div>
         <nav>
             <ul id="navUl">
-                <li><a href="#about" class="active-link" id="aboutLink">About</a></li>
-                <li><a href="#work" id="workLink">Works</a></li>
-                <li><a href="#contact" id="contactLink">Contact</a></li>
+                <li><a href="#" class="active-link" id="aboutLink">About</a></li>
+                <li><a href="#" id="workLink">Works</a></li>
+                <li><a href="#" id="contactLink">Contact</a></li>
             </ul>
         </nav>
         <div class="footer-link">
@@ -28,35 +28,68 @@
     </header>
     <main>
         <section class="about activeSection" id="about">
-            <article>
-                <h1>About</h1>
-                <div class="container">
-                    <p class="logo"><b>polina</b> lappo<span>.</span></p>
-                    <p class="vacancy">JavaScript Developer</p>
-                    <p class="info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum laboriosam eos atque error illum obcaecati laudantium totam ratione commodi.
-                    </p>
-                    <div>
-                        <button>Hire me</button>
-                        <button>Get CV</button>
-                    </div>
-                    <div>
-                        <p>Release yourself - It's a big Sky</p>
-                    </div>
+            <h1>About</h1>
+            <div class="container">
+                <p class="logo"><b>polina</b> lappo<span>.</span></p>
+                <p class="vacancy">JavaScript Developer</p>
+                <p class="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum laboriosam eos atque error illum obcaecati laudantium totam ratione commodi.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi earum distinctio blanditiis amet? Nemo reiciendis libero molestiae deleniti nisi error.
+                </p>
+                <div>
+                    <button>Hire me</button>
+                    <button>Get CV</button>
                 </div>
-            </article>
+            </div>
         </section>
         <section class="work dont-show" id="work">
-            <article>
-                <h1>Works</h1>
-                <div></div>
-            </article>
+            <h1>Works</h1>
+            <div class="container">
+                <figure>
+                    <!-- <img src="" alt=""> -->
+                    <div style="width: 312px; height: 234px; background: grey"></div>
+                    <figcaption><a href="#">Name of project</a></figcaption>
+                </figure>
+                <figure>
+                    <!-- <img src="" alt=""> -->
+                    <div style="width: 312px; height: 234px; background: grey"></div>
+                    <figcaption><a href="#">Name of project</a></figcaption>
+                </figure>
+                <figure>
+                    <!-- <img src="" alt=""> -->
+                    <div style="width: 312px; height: 234px; background: grey"></div>
+                    <figcaption><a href="#">Name of project</a></figcaption>
+                </figure>
+                <figure>
+                    <!-- <img src="" alt=""> -->
+                    <div style="width: 312px; height: 234px; background: grey"></div>
+                    <figcaption><a href="#">Name of project</a></figcaption>
+                </figure>
+                <figure>
+                    <!-- <img src="" alt=""> -->
+                    <div style="width: 312px; height: 234px; background: grey"></div>
+                    <figcaption><a href="#">Name of project</a></figcaption>
+                </figure>
+            </div>
         </section>
         <section class="contact dont-show" id="contact" >
-            <article>
-                <h1>Contacts</h1>
-                <div></div>
-            </article>
+            <h1>Contacts</h1>
+            <div class="container">
+                <form action="">
+                    <fieldset>
+                        <legend>About Your Project</legend>
+                        <textarea name="project" id="project" placeholder="Project Type, Target customer, timeline, estimate etc"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>About You</legend>
+                        <input type="text" name="name" id="name" placeholder="Name *" required>
+                        <input type="email" name="email" id="email" placeholder="Email *" required>
+                        <input type="tel" name="telphon" id="telphon" placeholder="Telephone">
+                        <input type="submit" value="Send Request">
+                    </fieldset>
+                </form>
+                
+            </div>
         </section>
     </main>
     <script src="js/script.js"></script>
