@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <title>Polina Lappo</title>
+    <title data-i18n="polina.title"></title>
 </head>
 
 <body>
     <header>
+        <ul class="lang-picker">
+            <li id="english">en</li>
+            <li id="russian">ru</li>
+        </ul>
         <div class="avatar"></div>
         <nav>
             <ul id="navUl">
-                <li><a href="#" class="active-link" id="aboutLink">About</a></li>
-                <li><a href="#" id="workLink">Works</a></li>
-                <li><a href="#" id="contactLink">Contact</a></li>
+                <li><a href="#" class="active-link" id="aboutLink" data-i18n="polina.nav.about"></a></li>
+                <li><a href="#" id="workLink" data-i18n="polina.nav.works"></a></li>
+                <li><a href="#" id="contactLink" data-i18n="polina.nav.contacts"></a></li>
             </ul>
         </nav>
         <div class="footer-link">
@@ -28,22 +32,19 @@
     </header>
     <main>
         <section class="about activeSection" id="about">
-            <h1>About</h1>
+            <h1 data-i18n="polina.header.about"></h1>
             <div class="container">
                 <p class="logo"><b>polina</b> lappo<span>.</span></p>
-                <p class="vacancy">JavaScript Developer</p>
-                <p class="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum laboriosam eos atque error illum obcaecati laudantium totam ratione commodi.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi earum distinctio blanditiis amet? Nemo reiciendis libero molestiae deleniti nisi error.
-                </p>
-                <div>
-                    <button>Hire me</button>
-                    <button>Get CV</button>
+                <p class="vacancy" data-i18n="polina.vacancy"></p>
+                <p class="info" data-i18n="polina.info"></p>
+                <div class="button">
+                    <button id="hire" data-i18n="polina.btn.hire"></button>
+                    <button id="resume" data-i18n="polina.btn.download"></button>
                 </div>
             </div>
         </section>
         <section class="work dont-show" id="work">
-            <h1>Works</h1>
+            <h1 data-i18n="polina.header.works"></h1>
             <div class="container">
                 <figure>
                     <!-- <img src="" alt=""> -->
@@ -73,26 +74,26 @@
             </div>
         </section>
         <section class="contact dont-show" id="contact" >
-            <h1>Contacts</h1>
+            <h1 data-i18n="polina.header.contacts"></h1>
             <div class="container">
                 <div class="popover dont-show" id="popover">
                     <span id="close-popover">X</span>
-                    <p id="response-status">Your request was sent</p>
+                    <p id="response-status"></p>
                 </div>
                 <form action="">
                     <fieldset>
-                        <legend>About Your Project</legend>
-                        <textarea name="project" id="project" placeholder="Project Type, Target customer, timeline, estimate etc"></textarea>
+                        <legend data-i18n="polina.form.aboutProject"></legend>
+                        <textarea name="project" id="project" data-i18n-placeholder="polina.form.placeholder.project"></textarea>
                     </fieldset>
                     <fieldset>
-                        <legend>About You</legend>
+                        <legend data-i18n="polina.form.aboutYou"></legend>
                         <div class="flex">
-                            <input type="text" name="name" id="name" placeholder="Name *" required>
-                            <input type="email" name="email" id="email" placeholder="Email *" required>
+                            <input type="text" name="name" id="name" data-i18n-placeholder="polina.form.placeholder.name" required>
+                            <input type="email" name="email" id="email" data-i18n-placeholder="polina.form.placeholder.email" required>
                         </div>
                         <div class="flex">
-                            <input type="tel" name="telphon" id="telphon" placeholder="Telephone">
-                            <input type="submit" value="Send Request">
+                            <input type="tel" name="telphon" id="telphon" data-i18n-placeholder="polina.form.placeholder.phone">
+                            <input type="submit" data-i18n-value="polina.btn.submit">
                         </div>
                     </fieldset>
                 </form>
@@ -100,6 +101,8 @@
             </div>
         </section>
     </main>
+    <script src="js/i18n.js"></script>
+    <script src="js/translator.js"></script>
     <script src="js/script.js"></script>
 </body>
 
