@@ -75,6 +75,10 @@
         <section class="contact dont-show" id="contact" >
             <h1>Contacts</h1>
             <div class="container">
+                <div class="popover dont-show" id="popover">
+                    <span id="close-popover">X</span>
+                    <p id="response-status">Your request was sent</p>
+                </div>
                 <form action="">
                     <fieldset>
                         <legend>About Your Project</legend>
@@ -82,10 +86,14 @@
                     </fieldset>
                     <fieldset>
                         <legend>About You</legend>
-                        <input type="text" name="name" id="name" placeholder="Name *" required>
-                        <input type="email" name="email" id="email" placeholder="Email *" required>
-                        <input type="tel" name="telphon" id="telphon" placeholder="Telephone">
-                        <input type="submit" value="Send Request">
+                        <div class="flex">
+                            <input type="text" name="name" id="name" placeholder="Name *" required>
+                            <input type="email" name="email" id="email" placeholder="Email *" required>
+                        </div>
+                        <div class="flex">
+                            <input type="tel" name="telphon" id="telphon" placeholder="Telephone">
+                            <input type="submit" value="Send Request">
+                        </div>
                     </fieldset>
                 </form>
                 

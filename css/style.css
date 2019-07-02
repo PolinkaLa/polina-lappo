@@ -134,6 +134,38 @@ section {
 .work figure a:hover {
   text-decoration: underline;
 }
+.contact .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.contact .popover {
+  width: 300px;
+  height: 200px;
+  background: #0a112a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -100px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 45, 168, 0.9);
+  box-sizing: border-box;
+  padding-top: 70px;
+}
+.contact .popover span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #ff2da8;
+}
+.contact .popover p {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 20px;
+}
 .contact form {
   margin-right: 55px;
 }
@@ -150,7 +182,8 @@ section {
 }
 .contact form textarea {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
+  resize: none;
 }
 .contact form textarea,
 .contact form input {
@@ -161,8 +194,19 @@ section {
   font-size: 22px;
   padding: 10px;
 }
-.dont-show {
-  display: none;
+.contact form input {
+  width: 48%;
+}
+.contact form input[type="submit"] {
+  color: #ffffff;
+  background: #ff4ba8;
+  border: none;
+}
+.contact form input[type="submit"]:hover {
+  background: rgba(255, 75, 168, 0.8);
+}
+.contact form input[type="submit"]:active {
+  background: rgba(255, 75, 168, 0.5);
 }
 ::-webkit-scrollbar-button {
   width: 10px;
@@ -183,4 +227,7 @@ section {
 ::-webkit-scrollbar {
   width: 10px;
   margin-right: 1px;
+}
+.dont-show {
+  display: none;
 }
