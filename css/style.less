@@ -20,7 +20,42 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
 }
-
+#mob-nav {
+    display: none;
+    color: rgba(255, 255,255, 1);
+    background: rgba(255, 255,255, 0.06);
+    border: none;
+    font-size: 50px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    right: 15px;
+    padding: 0;
+    line-height: 0;
+}
+#mob-nav:hover,
+#mob-nav:active {
+    outline: 0;
+}
+#mob-nav-close {
+    display: none;
+    color: rgba(255, 255,255, 1);
+    background: rgba(255, 255,255, 0.06);
+    border: none;
+    font-size: 50px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    right: 15px;
+    padding: 0;
+    line-height: 0;
+}
+#mob-nav-close:hover,
+#mob-nav-close:active {
+    outline: 0;
+}
 header {
     background: rgba(10, 17, 42, 0.6);
     height: auto;
@@ -140,7 +175,7 @@ section {
     }
     .info {
         color: rgba(255, 255,255, 0.58);
-        font-size: 30px;
+        font-size: 28px;
         line-height: 1.8;
     }
     button {
@@ -312,6 +347,11 @@ section {
     display: none;
 }
 
+.show-close-btn {
+    display: block;
+    z-index: 1;
+}
+
 .lang-picker {
 	position: absolute;
     top: 10px;
@@ -342,4 +382,75 @@ section {
     font-variant: normal;
     text-transform: none;        
     font-size: 40px;
+}
+.mob-nav {
+    display: flex;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height:100vh;
+    background: rgba(10, 17, 42, 1);
+}
+
+@media screen and (max-width: 1100px) {
+    .about button {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        padding: 0 0;
+    }
+    .lang-picker {
+        padding-left: 0;
+    }
+    .contact .flex {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .contact form input {
+        width: 100%;
+        margin-bottom: 20px
+    }
+}
+@media screen and (max-width: 780px) {
+    header{
+        display: none
+    }
+    #mob-nav {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section {
+        padding-left: 25px;
+    }
+    .about {
+        .logo {
+            font-size: 50px;
+        }
+        .vacancy {
+            font-size: 36px; 
+        }
+        button {
+            width: 220px;
+            height: 60px;
+            font-size: 26px;
+        }
+    }
+    
+    .work {
+        figure {
+            width: 250px;
+            height: auto;
+            img {
+                display: block;
+                width: 248px; 
+                height: auto;
+            }
+        }
+    }
 }
