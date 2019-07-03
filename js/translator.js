@@ -75,7 +75,11 @@
                 const value = document.querySelector(`[data-i18n-value="${key}"]`);
                 if (value) {
                     value.setAttribute('value', contents.prop(key)[this.language]);
-                }
+				}
+				const href = document.querySelector(`[data-i18n-href="${key}"]`);
+				if (href) {
+					href.setAttribute("href", contents.prop(key)[this.language]); 
+				}
 			} else {
                 const text = document.querySelector(`[data-i18n="${key}"]`);
                 if (text) {
@@ -89,7 +93,11 @@
                 const value = document.querySelector(`[data-i18n-value="${key}"]`);
                 if (value) {
                     value.setAttribute('value', contents.prop(key)['en']);
-                }
+				}
+				const href = document.querySelector(`[data-i18n-href="${key}"]`);
+				if (href) {
+					href.setAttribute("href", contents.prop(key)['en']); 
+				}
 			}
 		}
 	};

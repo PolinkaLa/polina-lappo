@@ -178,7 +178,7 @@ section {
         font-size: 28px;
         line-height: 1.8;
     }
-    button {
+    a {
         color: rgba(255, 255,255, 1);
         background: rgba(255, 255,255, 0.06);
         border: none;
@@ -187,9 +187,14 @@ section {
         font-size: 28px;
         outline: 0;
         margin-right: 40px;
+        display: inline-block;
+        text-decoration: none;
+        line-height: 2.5;
+        text-align: center;
+        margin-bottom: 40px;
     }
-    button:hover,
-    button:active {
+    a:hover,
+    a:active {
         background: rgba(255, 75, 168, 1);
     }
 }
@@ -206,14 +211,14 @@ section {
 
     figure {
         width: 314px;
-        height: 280px;
+        height: auto;
         margin: 0;
         margin-bottom: 40px;
 
         img {
             display: block;
             width: 312px; 
-            height: 234px;
+            height: auto;
         }
 
         figcaption {
@@ -264,7 +269,7 @@ section {
             font-size: 20px;
         }
     }
-    form {
+    .form {
         margin-right: 55px;
 
         fieldset{

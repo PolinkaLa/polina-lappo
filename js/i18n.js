@@ -52,6 +52,10 @@ const polinaJson = {
             "submit": {
                 "en": "Send request",
                 "ru": "Отправить запрос"
+            },
+            "resume":{
+                "en": "resource/resume_lappo_en.pdf",
+                "ru": "resource/resume_lappo_ru.pdf"
             }
         },
         "form": {

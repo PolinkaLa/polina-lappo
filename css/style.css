@@ -157,7 +157,7 @@ section {
   font-size: 28px;
   line-height: 1.8;
 }
-.about button {
+.about a {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.06);
   border: none;
@@ -166,9 +166,14 @@ section {
   font-size: 28px;
   outline: 0;
   margin-right: 40px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 2.5;
+  text-align: center;
+  margin-bottom: 40px;
 }
-.about button:hover,
-.about button:active {
+.about a:hover,
+.about a:active {
   background: #ff4ba8;
 }
 .work .container {
@@ -180,14 +185,14 @@ section {
 }
 .work figure {
   width: 314px;
-  height: 280px;
+  height: auto;
   margin: 0;
   margin-bottom: 40px;
 }
 .work figure img {
   display: block;
   width: 312px;
-  height: 234px;
+  height: auto;
 }
 .work figure figcaption {
   margin-top: 20px;
@@ -232,27 +237,27 @@ section {
   margin: 0 auto;
   font-size: 20px;
 }
-.contact form {
+.contact .form {
   margin-right: 55px;
 }
-.contact form fieldset {
+.contact .form fieldset {
   border: none;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
 }
-.contact form legend {
+.contact .form legend {
   color: #ffffff;
   font-size: 30px;
   margin-bottom: 20px;
 }
-.contact form textarea {
+.contact .form textarea {
   width: 100%;
   height: 30vh;
   resize: none;
 }
-.contact form textarea,
-.contact form input {
+.contact .form textarea,
+.contact .form input {
   background: rgba(30, 26, 52, 0.33);
   border: 1px solid rgba(255, 255, 255, 0.33);
   color: rgba(255, 255, 255, 0.33);
@@ -260,23 +265,23 @@ section {
   font-size: 20px;
   padding: 10px;
 }
-.contact form textarea:focus,
-.contact form input:focus {
+.contact .form textarea:focus,
+.contact .form input:focus {
   color: #ffffff;
   outline: 1px solid #ffffff;
 }
-.contact form input {
+.contact .form input {
   width: 48%;
 }
-.contact form input[type="submit"] {
+.contact .form input[type="submit"] {
   color: #ffffff;
   background: #ff4ba8;
   border: none;
 }
-.contact form input[type="submit"]:hover {
+.contact .form input[type="submit"]:hover {
   background: rgba(255, 75, 168, 0.8);
 }
-.contact form input[type="submit"]:active {
+.contact .form input[type="submit"]:active {
   background: rgba(255, 75, 168, 0.5);
 }
 ::-webkit-scrollbar-button {

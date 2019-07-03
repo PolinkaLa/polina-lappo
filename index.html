@@ -41,8 +41,8 @@
                 <p class="vacancy" data-i18n="polina.vacancy"></p>
                 <p class="info" data-i18n="polina.info"></p>
                 <div class="button">
-                    <button id="hire" data-i18n="polina.btn.hire"></button>
-                    <button id="resume" data-i18n="polina.btn.download"></button>
+                    <a id="hire" data-i18n="polina.btn.hire"></a>
+                    <a id="resume" data-i18n="polina.btn.download" data-i18n-href="polina.btn.resume" target="download"></a>
                 </div>
             </div>
         </section>
@@ -78,7 +78,7 @@
                     <span id="close-popover">X</span>
                     <p id="response-status"></p>
                 </div>
-                <form action="">
+                <div class="form">
                     <fieldset>
                         <legend data-i18n="polina.form.aboutProject"></legend>
                         <textarea name="project" id="project" data-i18n-placeholder="polina.form.placeholder.project"></textarea>
@@ -90,11 +90,11 @@
                             <input type="email" name="email" id="email" data-i18n-placeholder="polina.form.placeholder.email" required>
                         </div>
                         <div class="flex">
-                            <input type="tel" name="telphon" id="telphon" data-i18n-placeholder="polina.form.placeholder.phone">
-                            <input type="submit" data-i18n-value="polina.btn.submit">
+                            <input type="tel" name="phone" id="phone" data-i18n-placeholder="polina.form.placeholder.phone">
+                            <input type="submit" data-i18n-value="polina.btn.submit" id="submit">
                         </div>
                     </fieldset>
-                </form>
+                </div>
                 
             </div>
         </section>
