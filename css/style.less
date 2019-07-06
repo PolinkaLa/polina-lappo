@@ -398,6 +398,42 @@ section {
     background: rgba(10, 17, 42, 1);
 }
 
+.error,
+.success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    padding: 0;
+
+    p {
+       margin: 0;
+       font-size: 30;
+       color:  rgba(255, 75, 168, 1);
+    }
+
+    a {
+        color: rgba(255, 255,255, 1);
+        background: rgba(255, 255,255, 0.06);
+        border: none;
+        width: 235px;
+        height: 70px;
+        font-size: 28px;
+        outline: 0;
+        margin-top: 40px;
+        display: inline-block;
+        text-decoration: none;
+        line-height: 2.5;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    a:hover,
+    a:active {
+        background: rgba(255, 75, 168, 1);
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .about button {
         margin-bottom: 20px;

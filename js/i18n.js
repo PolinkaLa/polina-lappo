@@ -37,8 +37,12 @@ const polinaJson = {
             "ru": "JavaScript разработчик"
         },
         "info": {
-            "en": "helloow lkdf;ldjf's",
-            "ru": "Приветыт как дела тут рсский текст"
+            "en": "Hi! I`m Polina"+
+            "<p>I`m developing sites, landing pages and different web-applications</p>"+
+            "<p>Modern web-techonologys and best practice are used in development</p>",
+            "ru": "<p>Привет, я Полина!</p>"+
+            "<p>Я занимаюсь разработкой сайтов, посадочных страниц и различных web-приложений.</p>"+
+            "<p>В работе используются современные web-технологии и лучшие практики</p>"
         },
         "btn":{
             "hire": {
@@ -85,6 +89,18 @@ const polinaJson = {
                     "ru": "Телефон"
                 }
 
+            },
+            "error": {
+                "en": "Error",
+                "ru": "Ошибка"
+            },
+            "success": {
+                "en": "Success",
+                "ru": "Успешно"
+            },
+            "homelink": {
+                "en": "To home",
+                "ru": "На главную"
             }
         }
 	}
