@@ -26,7 +26,7 @@ $mail->Body    = '' .$name . ' оставил заявку, его телефо�
 $mail->AltBody = '';
 
 if(!$mail->send()) {
-    echo ('location: error.html');
+    header ('location: error.html');
 } else {
     header('location: success.html');
 }
