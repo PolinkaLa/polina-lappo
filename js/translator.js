@@ -1,6 +1,6 @@
 (function () {
 	this.I18n = function (defaultLang) {
-		const lang = defaultLang || 'en';
+		const lang = defaultLang || 'ru';
 		this.language = lang;
 
 		( (i18n) => {
@@ -83,20 +83,20 @@
 			} else {
                 const text = document.querySelector(`[data-i18n="${key}"]`);
                 if (text) {
-                    text.innerHTML = contents.prop(key)['en'];
+                    text.innerHTML = contents.prop(key)['ru'];
                 }
                 const place = document.querySelector(`[data-i18n-placeholder="${key}"]`);
                 if(place) {
-                place.setAttribute('placeholder', contents.prop(key)['en']);
+                place.setAttribute('placeholder', contents.prop(key)['ru']);
 
                 }
                 const value = document.querySelector(`[data-i18n-value="${key}"]`);
                 if (value) {
-                    value.setAttribute('value', contents.prop(key)['en']);
+                    value.setAttribute('value', contents.prop(key)['ru']);
 				}
 				const href = document.querySelector(`[data-i18n-href="${key}"]`);
 				if (href) {
-					href.setAttribute("href", contents.prop(key)['en']); 
+					href.setAttribute("href", contents.prop(key)['ru']); 
 				}
 			}
 		}
@@ -107,15 +107,15 @@
 document.addEventListener("DOMContentLoaded", () => { 
     const i18n = new I18n();
 	i18n.localize();
-	document.querySelector('.lang-picker #english').classList.add('selected');
+	document.querySelector('.lang-picker #russian').classList.add('selected');
 	
-	document.querySelector('.lang-picker #english').addEventListener('click', () => {
-		i18n.lang('en');
-		selectLang(document.querySelector('.lang-picker #english'));
-	})
 	document.querySelector('.lang-picker #russian').addEventListener('click', () => {
-		i18n.lang('ru');
+		i18n.lang('en');
 		selectLang(document.querySelector('.lang-picker #russian'));
+	})
+	document.querySelector('.lang-picker #english').addEventListener('click', () => {
+		i18n.lang('ru');
+		selectLang(document.querySelector('.lang-picker #english'));
 	})
 
 	function selectLang (picker) {

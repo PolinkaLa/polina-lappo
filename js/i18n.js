@@ -37,12 +37,12 @@ const polinaJson = {
             "ru": "JavaScript разработчик"
         },
         "info": {
-            "en": "Hi! I`m Polina"+
-            "<p>I`m developing sites, landing pages and different web-applications</p>"+
-            "<p>Modern web-techonologys and best practice are used in development</p>",
+            "en": "<p>Hi! I`m Polina!</p>"+
+            "<p>I`m developing sites, landing pages and different web-applications. You can see my projects in section <i>WORKS</i>.</p>"+
+            "<p>If you have a cool idea of the site or application and You want to implement it, write to me on social networks or fill out the form on the site!</p>",
             "ru": "<p>Привет, я Полина!</p>"+
-            "<p>Я занимаюсь разработкой сайтов, посадочных страниц и различных web-приложений.</p>"+
-            "<p>В работе используются современные web-технологии и лучшие практики</p>"
+            "<p>Я занимаюсь разработкой сайтов, посадочных страниц и различных web-приложений. Вы можете посмотеть примеры в разделе <i>РАБОТЫ</i>.</p>"+
+            "<p>Если у вас есть крутая идея сайта или приложения и Вы хотите реализовать ее, пишите мне в социальных сетях или заполните формуна сайте! </p>"
         },
         "btn":{
             "hire": {
@@ -91,12 +91,12 @@ const polinaJson = {
 
             },
             "error": {
-                "en": "Error",
-                "ru": "Ошибка"
+                "en": "Something is wrong. Try to send the message later or write me on social networks.",
+                "ru": "Что-то пошло не так. Попробуйте отправить сообщение позже или напишите мне в социальных сетях."
             },
             "success": {
-                "en": "Success",
-                "ru": "Успешно"
+                "en": "Thank you! Your message has been sent successfully, I will reply You soon.",
+                "ru": "Спасибо! Ваше сообщение успешно отправлено, я отвечу Вам в ближайшее время"
             },
             "homelink": {
                 "en": "To home",

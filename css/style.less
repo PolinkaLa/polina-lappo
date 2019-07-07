@@ -165,7 +165,6 @@ section {
             color:rgba(255, 75, 168, 1);
             font-weight: bolder;
         }
-        // margin-top:130px;
         margin-bottom: 0
     }
     .vacancy {
@@ -175,8 +174,13 @@ section {
     }
     .info {
         color: rgba(255, 255,255, 0.58);
-        font-size: 28px;
-        line-height: 1.8;
+        font-size: 25px;
+        line-height: 1.5;
+        
+        p {
+            margin: 0;
+            margin-bottom: 10px;
+        }
     }
     a {
         color: rgba(255, 255,255, 1);
@@ -192,10 +196,12 @@ section {
         line-height: 2.5;
         text-align: center;
         margin-bottom: 40px;
+        cursor: pointer;
     }
     a:hover,
     a:active {
         background: rgba(255, 75, 168, 1);
+        
     }
 }
 
@@ -224,10 +230,11 @@ section {
         figcaption {
             margin-top: 20px;
         }
-        a {
+        p {
             color: rgba(255, 255,255, 1);
             text-decoration: none;
             font-size: 25px;
+            margin: 0;
         }
         a:hover {
             text-decoration: underline
@@ -241,33 +248,6 @@ section {
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 20px;
-    }
-    .popover {
-        width: 300px;
-        height: 200px;
-        background: rgba(10, 17, 42, 1);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -150px;
-        margin-top: -100px;
-        color: rgba(255, 255, 255, 1);
-        border: 1px solid  rgba(255, 45, 168, 0.9);
-        box-sizing: border-box;
-        padding-top: 70px;
-
-        span {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            color: rgba(255, 45, 168, 1);
-        }
-        p {
-            width: 70%;
-            margin: 0 auto;
-            font-size: 20px;
-        }
     }
     .form {
         margin-right: 55px;
@@ -312,7 +292,8 @@ section {
         input[type="submit"] {
             color: rgba(255, 255,255, 1);
             background: rgba(255, 75, 168, 1);
-            border: none;            
+            border: none;    
+            cursor: pointer;        
         }
         input[type="submit"]:hover {
             background: rgba(255, 75, 168, 0.8);
@@ -411,6 +392,8 @@ section {
        margin: 0;
        font-size: 30;
        color:  rgba(255, 75, 168, 1);
+       width: 80%;
+       text-align: center;
     }
 
     a {
@@ -427,6 +410,7 @@ section {
         line-height: 2.5;
         text-align: center;
         margin-bottom: 40px;
+        cursor: pointer;
     }
     a:hover,
     a:active {
