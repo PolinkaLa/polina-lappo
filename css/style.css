@@ -192,7 +192,23 @@ section {
   width: 314px;
   height: auto;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
+}
+.work figure .link-to-work {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+.work figure .link-to-work img {
+  transition: 1s;
+}
+.work figure .link-to-work:hover {
+  text-decoration: underline;
+}
+.work figure .link-to-work:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .work figure img {
   display: block;
@@ -200,16 +216,14 @@ section {
   height: auto;
 }
 .work figure figcaption {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 .work figure p {
   color: #ffffff;
   text-decoration: none;
   font-size: 25px;
   margin: 0;
-}
-.work figure a:hover {
-  text-decoration: underline;
+  text-align: center;
 }
 .contact .flex {
   display: flex;

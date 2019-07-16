@@ -219,7 +219,25 @@ section {
         width: 314px;
         height: auto;
         margin: 0;
-        margin-bottom: 40px;
+        margin-bottom: 45px;
+
+        .link-to-work {
+            display: block;
+            text-decoration: none;
+            color: rgba(255, 255,255, 1);
+            img {
+                transition: 1s;
+            }
+            
+        }
+        .link-to-work:hover {
+            img {
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+            text-decoration: underline;
+        }
 
         img {
             display: block;
@@ -228,16 +246,15 @@ section {
         }
 
         figcaption {
-            margin-top: 20px;
+            margin-top: 25px;
         }
         p {
             color: rgba(255, 255,255, 1);
             text-decoration: none;
             font-size: 25px;
             margin: 0;
-        }
-        a:hover {
-            text-decoration: underline
+            text-align: center;
+
         }
     }
 }
