@@ -110,11 +110,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.querySelector('.lang-picker #russian').classList.add('selected');
 	
 	document.querySelector('.lang-picker #russian').addEventListener('click', () => {
-		i18n.lang('en');
+		i18n.lang('ru');
 		selectLang(document.querySelector('.lang-picker #russian'));
 	})
 	document.querySelector('.lang-picker #english').addEventListener('click', () => {
-		i18n.lang('ru');
+		i18n.lang('en');
 		selectLang(document.querySelector('.lang-picker #english'));
 	})
 
