@@ -63,6 +63,14 @@ const polinaJson = {
             }
         },
         "form": {
+            "sotial": {
+                "en": "",
+                "ru": ""
+            },
+            "description": {
+                "en": "Also, You can send a request for the developing of the project by filling out the form below.",
+                "ru": "A еще Вы можете отправить заявку на разработку проекта, заполнив форму ниже."
+            },
             "aboutProject": {
                 "en": "About Your Project",
                 "ru": "О проекте"

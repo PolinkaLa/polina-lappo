@@ -113,6 +113,19 @@ header nav ul li .active-link {
   border-left: 10px solid #ff2da8;
   color: #ff2da8;
 }
+header .icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 40px;
+}
 main {
   background: rgba(10, 17, 42, 0.9);
   height: 100vh;
@@ -238,6 +251,50 @@ section {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+.contact .social {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 25px;
+  line-height: 1.5;
+}
+.contact .social ul {
+  padding-left: 0;
+}
+.contact .social ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.contact .social ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 25px;
+  line-height: 1.5;
+}
+.contact .social ul li a:hover,
+.contact .social ul li a:focus,
+.contact .social ul li a:active {
+  color: #ff4ba8;
+}
+.contact .social .icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 20px;
+  margin-right: 20px;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 40px;
+}
+.contact .social .email {
+  font-size: 40px;
+}
+.contact .form .description {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 25px;
+  line-height: 1.5;
+}
 .contact .form fieldset {
   border: none;
   margin: 0;
@@ -324,19 +381,6 @@ section {
 }
 .lang-picker li.selected {
   color: #ff2da8;
-}
-.icon {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  font-size: 40px;
 }
 .mob-nav {
   display: flex;

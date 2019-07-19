@@ -23,7 +23,7 @@
 
 <body>
     <button id="mob-nav">&#8801;</button>
-    <button id="mob-nav-close">X</button>
+    <button id="mob-nav-close">&#215;</button>
     <header>
         <ul class="lang-picker">
             <li id="english">en</li>
@@ -102,7 +102,16 @@
         <section class="contact dont-show" id="contact" >
             <h1 data-i18n="polina.header.contacts"></h1>
             <div class="container">
+                <div class="social">
+                    <ul>
+                        <li><a href="https://vk.com/paulina_lappo" target="_blank" title="VK"><i class="icon icon-vkontakte">&#xf189;</i> VKontakte - @paulina_lappo</a></li>
+                        <li><a href="https://t.me/PaulinaLappo" target="_blank" title="Telegram"><i class="icon icon-telegram">&#xf2c6;</i> Telegram - @PaulinaLappo</a></li>
+                        <li><a href="https://github.com/PolinkaLa" target="_blank" title="GitHub"><i class="icon icon-github">&#xf113;</i> GitHub - @PolinkaLa</a></li>
+                        <li><a href="mailto:miss.lappo@yandex.ru"><i class="icon icon-github">&#xf0e0;</i> Email - miss.lappo@yandex.ru</a></li>
+                    </ul>
+                </div>
                 <form action="mail.php" method="POST" class="form">
+                    <p class="description" data-i18n="polina.form.description"></p>
                     <fieldset>
                         <legend data-i18n="polina.form.aboutProject"></legend>
                         <textarea name="project" id="project" data-i18n-placeholder="polina.form.placeholder.project"></textarea>

@@ -125,6 +125,19 @@ header {
         }
         
     }
+    .icon {
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        display: inline-block;
+        text-decoration: inherit;
+        width: 1em;
+        margin-right: .2em;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        font-size: 40px;
+    }
 } 
 
 main {
@@ -273,7 +286,51 @@ section {
         justify-content: space-between;
         margin-bottom: 20px;
     }
+    .social{
+        color: rgba(255, 255,255, 0.58);
+        font-size: 25px;
+        line-height: 1.5;
+        ul {
+            padding-left: 0;
+            li{
+                list-style-type: none;
+                margin-bottom: 10px;
+                a {
+                    text-decoration: none;
+                    color: rgba(255, 255,255, 0.58);
+                    font-size: 25px;
+                    line-height: 1.5;
+                }
+                a:hover,
+                a:focus,
+                a:active {
+                    color: rgba(255, 75, 168, 1);
+                }
+            }
+        }
+        .icon {
+            font-family: "fontello";
+            font-style: normal;
+            font-weight: normal;
+            display: inline-block;
+            text-decoration: inherit;
+            width: 20px;
+            margin-right: 20px;
+            text-align: center;
+            font-variant: normal;
+            text-transform: none;
+            font-size: 40px;
+        }
+        .email {
+            font-size: 40px
+        }
+    }
     .form {
+        .description {
+            color: rgba(255, 255,255, 0.58);
+            font-size: 25px;
+            line-height: 1.5;
+        }
         fieldset{
             border: none;
             margin:  0;
@@ -314,8 +371,8 @@ section {
         input[type="submit"] {
             color: rgba(255, 255,255, 1);
             background: rgba(255, 75, 168, 1);
-            border: none;    
-            cursor: pointer;        
+            border: none;
+            cursor: pointer;
         }
         input[type="submit"]:hover {
             background: rgba(255, 75, 168, 0.8);
@@ -378,19 +435,7 @@ section {
 	color: rgba(255, 45, 168, 1);
 }
 
-.icon {
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    margin-right: .2em;
-    text-align: center;
-    font-variant: normal;
-    text-transform: none;
-    font-size: 40px;
-}
+
 .mob-nav {
     display: flex;
     position: absolute; 

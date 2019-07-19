@@ -22,24 +22,24 @@ navUl.addEventListener("click", (event) => {
     activeLink.classList.add("active-link");
 })
 
-mobNav.addEventListener("touchend", () => {
+mobNav.addEventListener("click", () => {
     nav.classList.add("mob-nav")
     mobNav.classList.add("dont-show");
     mobNavClose.style = "display: block; z-index: 1;";
 })
 
-mobNavClose.addEventListener("touchend", () => {
+mobNavClose.addEventListener("click", () => {
     nav.classList.remove("mob-nav");
     mobNavClose.style = "";
     mobNav.classList.remove("dont-show");
 })
 
-nav.addEventListener("touchend", () => {
+nav.addEventListener("click", () => {
     setTimeout(() => {
         nav.classList.remove("mob-nav");
         mobNavClose.style = "";
         mobNav.classList.remove("dont-show");
-    }, 700)
+    }, 750)
 })
 
 hire.addEventListener("click", () => {
