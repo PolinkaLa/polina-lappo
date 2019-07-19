@@ -132,6 +132,7 @@ main h1 {
 }
 section {
   padding-left: 55px;
+  padding-right: 55px;
   min-width: auto;
 }
 .about .container {
@@ -161,6 +162,13 @@ section {
   margin: 0;
   margin-bottom: 10px;
 }
+.about .info span.link {
+  text-decoration: underline;
+}
+.about .info span.link:hover {
+  color: #ff4ba8;
+  cursor: pointer;
+}
 .about a {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.06);
@@ -186,7 +194,6 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-right: 55px;
 }
 .work figure {
   width: 314px;
@@ -230,9 +237,6 @@ section {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
-}
-.contact .form {
-  margin-right: 55px;
 }
 .contact .form fieldset {
   border: none;
@@ -280,7 +284,7 @@ section {
   background: rgba(255, 75, 168, 0.5);
 }
 ::-webkit-scrollbar-button {
-  width: 10px;
+  width: 0px;
   height: 0px;
 }
 ::-webkit-scrollbar-thumb {
@@ -292,12 +296,12 @@ section {
   background-color: #ff2da8;
 }
 ::-webkit-resizer {
-  width: 4px;
+  width: 0px;
   height: 0px;
 }
 ::-webkit-scrollbar {
-  width: 10px;
-  margin-right: 1px;
+  width: 0px;
+  margin-right: 0px;
 }
 .dont-show {
   display: none;
@@ -383,6 +387,11 @@ section {
 .success a:active {
   background: #ff4ba8;
 }
+@media screen and (max-width: 1300px) {
+  .work .container {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 1100px) {
   .about button {
     margin-bottom: 20px;
@@ -391,6 +400,10 @@ section {
 @media screen and (max-width: 1000px) {
   body {
     padding: 0 0;
+  }
+  main,
+  header {
+    border: none;
   }
   .lang-picker {
     padding-left: 0;
@@ -411,10 +424,19 @@ section {
   #mob-nav {
     display: block;
   }
+  .work .container {
+    justify-content: space-between;
+  }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 737px) {
+  .work .container {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
   section {
     padding-left: 25px;
+    padding-right: 25px;
   }
   .about .logo {
     font-size: 50px;
@@ -435,5 +457,12 @@ section {
     display: block;
     width: 248px;
     height: auto;
+  }
+}
+@media screen and (max-height: 600px) {
+  header .avatar {
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
   }
 }
