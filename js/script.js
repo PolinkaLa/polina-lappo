@@ -7,6 +7,7 @@ const nav = document.getElementsByTagName("header")[0];
 const hire = document.getElementById("hire");
 const submit = document.getElementById("submit");
 
+
 navUl.addEventListener("click", (event) => {
     const toShowSectionId = event.target.id.slice(0, -4);
     const toShowSection = document.getElementById(toShowSectionId);
@@ -53,3 +54,20 @@ hire.addEventListener("click", () => {
     activeLink = document.getElementById("contactLink");
     activeLink.classList.add("active-link");
 })
+
+window.onload = () => {
+    const spanLink = document.querySelector("#spanlink");
+    spanLink.addEventListener("click", () => {
+        const toShowSectionId = "work";
+        const toShowSection = document.getElementById(toShowSectionId);
+        let activeSection = document.getElementsByClassName("activeSection")[0];
+        activeSection.classList.remove("activeSection");
+        activeSection.classList.add("dont-show");
+        toShowSection.classList.remove("dont-show");
+        toShowSection.classList.add("activeSection")
+        let activeLink = document.getElementsByClassName("active-link")[0];
+        activeLink.classList.remove("active-link");
+        activeLink = document.getElementById("workLink");
+        activeLink.classList.add("active-link");
+    })
+};
