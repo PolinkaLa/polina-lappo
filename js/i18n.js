@@ -46,8 +46,8 @@ const polinaJson = {
         },
         "btn":{
             "hire": {
-                "en": "Hire me",
-                "ru": "Заказать работу"
+                "en": "Write me",
+                "ru": "Связаться со мной"
             },
             "download": {
                 "en": "Get CV",
@@ -69,11 +69,11 @@ const polinaJson = {
             },
             "description": {
                 "en": "Also, You can send a request for the developing of the project by filling out the form below.",
-                "ru": "A еще Вы можете отправить заявку на разработку проекта, заполнив форму ниже."
+                "ru": "A еще Вы можете написать мне сообщение, заполнив форму ниже."
             },
             "aboutProject": {
                 "en": "About Your Project",
-                "ru": "О проекте"
+                "ru": "Сообщение"
             },
             "aboutYou": {
                 "en": "About You",
